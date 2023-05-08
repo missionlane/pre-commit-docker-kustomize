@@ -6,3 +6,21 @@
     args: [overlay/production-us]
     always_run: true
     pass_filenames: false
+
+-   id: kustomize-fmt
+    name: kustomize format (via docker)
+    description: kustomize fmt provided by docker
+    entry: kustomize fmt
+    language: docker
+    args: [overlay/production-us]
+    always_run: true
+    pass_filenames: false
+
+-   id: kustomize-cfg
+    name: kustomize cfg (via docker)
+    description: kustomize cfg provided by docker
+    entry: kustomize cfg
+    language: docker
+    args: [overlay/production-us]
+    always_run: true
+    pass_filenames: false
